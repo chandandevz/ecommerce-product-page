@@ -40,7 +40,8 @@ function searchData() {
     return data.filter((product) => {
       return (
         product.title.toLowerCase().includes(searchField.value.toLowerCase()) ||
-        product.price.toString().includes(searchField.value)
+        product.price.toString().includes(searchField.value) ||
+        product.description.toString().includes(searchField.value)
       );
     });
   });
