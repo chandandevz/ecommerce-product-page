@@ -50,6 +50,6 @@ function searchData() {
 
 }
 
-searchField.addEventListener("change", searchData);
+searchField.addEventListener("input", searchData);
 
 displayData(productsData);
